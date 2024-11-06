@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="container-fluid navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">JAVASCRIPT <span class="text-secondary text-opacity-75">BASIS</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Hier houden we de navbar-items rechts uitgelijnd met 'justify-content-end' -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        BASIS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="oef01">oef1</a></li>
+                        <li><a class="dropdown-item" href="oef02">oef2</a></li>
+                        <li><a class="dropdown-item" href="oef03">oef3</a></li>
+                        <li><a class="dropdown-item" href="oef04">oef4</a></li>
+                        <li><a class="dropdown-item" href="oef05">oef5</a></li>
+                        <li><a class="dropdown-item" href="oef06">oef6</a></li>
+                        <li><a class="dropdown-item" href="oef07">oef7</a></li>
+                        <li><a class="dropdown-item" href="oef08">oef8</a></li>
+                        <li><a class="dropdown-item" href="oef09">oef9</a></li>
+                        <li><a class="dropdown-item" href="oef10">oef10</a></li>
+                        <li><a class="dropdown-item" href="oefeningen/oef01">oefSlack1</a></li>
+                        <li><a class="dropdown-item" href="oefeningen/oef02">oefSlack2</a></li>
+                        <li><a class="dropdown-item" href="oefeningen/oef03">oefSlack3</a></li>
+                        <li><a class="dropdown-item" href="oefeningen/oef04">oefSlack4</a></li>
+                        <li><a class="dropdown-item" href="oefeningen/oef05">oefSlack5</a></li>
+                        <li><a class="dropdown-item" href="oefeningen/oef06">oefSlack6</a></li>
+                        <li><a class="dropdown-item" href="oefeningen/oef07">oefSlack7</a></li>
+                        <li><a class="dropdown-item" href="oefeningen/oef08">oefSlack8</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        DOM
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="DOM">DOM1</a></li>
+                        <li><a class="dropdown-item" href="DOM2">DOM2</a></li>
+                        <li><a class="dropdown-item" href="DOM3">DOM3</a></li>
+                        <li><a class="dropdown-item" href="DOM4">DOM4</a></li>
+                        <li><a class="dropdown-item" href="DOMOEF/oef01">DOM5</a></li>
+                        <li><a class="dropdown-item" href="DOMOEF/oef2">DOM6</a></li>
+                        <li><a class="dropdown-item" href="DOMOEF/dragendrop">Drag and drop</a></li>
+                        <li><a class="dropdown-item" href="DOMOEF/listbox">Listbox</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="EVENT">EVENT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid col-12 col-lg-12">
+    <div class="container justify-content-center col-12 col-lg-12">
+        <!-- titel sectie -->
+        <section class="text-center m-5">
+            <h2>Ontdek BASIS, EVENTS en DOM!</h2>
+        </section>
+
+        <!-- basis sectie -->
+        <section class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+            <div class="text-center py-3"><h2>BASIS</h2></div>
+            <!-- Begin van de kaart-raster met 4 kolommen op groot scherm -->
+            <div class="row d-flex justify-content-center">
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oef01"><img src="jslogo.png" class="card-img-top" alt="oef1"></a>
+                        <div class="card-body">
+                            <a href="oef01" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Groetfunctie </h5>
+                            </a>
+                            <p class="card-text">Dit is oefening 1. Groetfunctie en stringmethoden.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oef02"><img src="jslogo.png" class="card-img-top" alt="oef2"></a>
+                        <div class="card-body">
+                            <a href="oef02" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Getallen Vermenigvuldigen</h5>
+                            </a>
+                            <p class="card-text">Dit is oefening 2. Schrijf een functie die twee getallen vermenigvuldigt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oef03"><img src="jslogo.png" class="card-img-top" alt="oef3"></a>
+                        <div class="card-body">
+                            <a href="oef03" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Controleer Even of Oneven</h5>
+                            </a>
+                            <p class="card-text">Dit is oefening 3. Schrijf een functie die controleert of een getal even is.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oef04"><img src="jslogo.png" class="card-img-top" alt="oef4"></a>
+                        <div class="card-body">
+                            <a href="oef04" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Begroeting op Maat</h5>
+                            </a>
+                            <p class="card-text">Dit is oefening 4. Schrijf een functie die een naam begroet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oef05"><img src="jslogo.png" class="card-img-top" alt="oef5"></a>
+                        <div class="card-body">
+                            <a href="oef05" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Hoogste Getal</h5>
+                            </a>
+                            <p class="card-text">Dit is oefening 5. Grootste getal uit drie retourneren.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oef06"><img src="jslogo.png" class="card-img-top" alt="oef6"></a>
+                        <div class="card-body">
+                            <a href="oef06" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Vermenigvuldigen</h5>
+                            </a>
+                            <p class="card-text">Dit is oefening 6. Vermenigvuldiging controleren.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oef07"><img src="jslogo.png" class="card-img-top" alt="oef7"></a>
+                        <div class="card-body">
+                            <a href="oef07" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Tel Woorden</h5>
+                            </a>
+                            <p class="card-text">Dit is oefening 7. Functie die het aantal woorden in een string telt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oef08"><img src="jslogo.png" class="card-img-top" alt="oef8"></a>
+                        <div class="card-body">
+                            <a href="oef08" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Dagen Tussen Twee Datums</h5>
+                            </a>
+                            <p class="card-text">Dit is oefening 8. Aantal dagen tussen twee datums berekenen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto " style="width: 18rem;">
+                        <a href="oef09"><img src="jslogo.png" class="card-img-top" alt="oef9"></a>
+                        <div class="card-body">
+                            <a href="oef09" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Array Methoden</h5>
+                            </a>
+                            <p class="card-text">Dit is oefening 9. Manipuleer en transformeer arrays.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oef10"><img src="jslogo.png" class="card-img-top" alt="oef10"></a>
+                        <div class="card-body">
+                            <a href="oef10" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Namen Sorteren</h5>
+                            </a>
+                            <p class="card-text">Dit is oefening 10. Namen invoeren en sorteren.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oefeningen/oef01"><img src="jslogo.png" class="card-img-top" alt="oef1slack"></a>
+                        <div class="card-body">
+                            <a href="oefeningen/oef01" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Getallen Invoeren</h5>
+                            </a>
+                            <p class="card-text">Dit slack oefening 1. Voer negatieve nummer om te stoppen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oefeningen/oef02"><img src="jslogo.png" class="card-img-top" alt="oef2slack"></a>
+                        <div class="card-body">
+                            <a href="oefeningen/oef02" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Arrays en Sommen</h5>
+                            </a>
+                            <p class="card-text">Dit slack oefening 2. Bereken de som van twee arrays.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oefeningen/oef03"><img src="jslogo.png" class="card-img-top" alt="oef3slack"></a>
+                        <div class="card-body">
+                            <a href="oefeningen/oef03" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Willekeurige Getallen</h5>
+                            </a>
+                            <p class="card-text">Dit slack oefening 3. Bereken de som van willekeurige getallen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oefeningen/oef04"><img src="jslogo.png" class="card-img-top" alt="oef4slack"></a>
+                        <div class="card-body">
+                            <a href="oefeningen/oef04" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Klaslijst Maken</h5>
+                            </a>
+                            <p class="card-text">Dit slack oefening 4. Voer namen in en druk ze onder elkaar af.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oefeningen/oef05"><img src="jslogo.png" class="card-img-top" alt="oef5slack"></a>
+                        <div class="card-body">
+                            <a href="oefeningen/oef05" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Alfabet</h5>
+                            </a>
+                            <p class="card-text">Dit slack oefening 5. Kleine letters hoofdletters maken.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oefeningen/oef06"><img src="jslogo.png" class="card-img-top" alt="oef6slack"></a>
+                        <div class="card-body">
+                            <a href="oefeningen/oef06" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Alfabet zonder functies</h5>
+                            </a>
+                            <p class="card-text">Dit slack oefening 6.  Kleine letters hoofdletters maken.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oefeningen/oef07"><img src="jslogo.png" class="card-img-top" alt="oef7slack"></a>
+                        <div class="card-body">
+                            <a href="oefeningen/oef07" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Even & Oneven</h5>
+                            </a>
+                            <p class="card-text">Dit slack oefening 7. Genereer arrays, haal even getallen eruit en bereken de som van oneven.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="oefeningen/oef08"><img src="jslogo.png" class="card-img-top" alt="oef8slack"></a>
+                        <div class="card-body">
+                            <a href="oefeningen/oef06" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Alfabetisch Sorteren</h5>
+                            </a>
+                            <p class="card-text">Dit slack oefening 6. Lees een array van namen in en sorteer ze alfabetisch.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--dom sectie-->
+        <section class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+            <div class="text-center py-3"><h2>DOM</h2></div>
+            <div class="row d-flex justify-content-center">
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="DOM/index.html"><img src="domlogo.png" class="card-img-top" alt="dom"></a>
+                        <div class="card-body">
+                            <a href="DOM/index.html" class="text-decoration-none">
+                                <h5 class="card-title text-warning">DOM 1</h5>
+                            </a>
+                            <p class="card-text">Dit is DOM 1. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="DOM2/index.html"><img src="domlogo.png" class="card-img-top" alt="dom2"></a>
+                        <div class="card-body">
+                            <a href="DOM2/index.html" class="text-decoration-none">
+                                <h5 class="card-title text-warning">DOM 2</h5>
+                            </a>
+                            <p class="card-text">Dit is DOM 2. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="DOM3/index.html"><img src="domlogo.png" class="card-img-top" alt="dom3"></a>
+                        <div class="card-body">
+                            <a href="DOM3/index.html" class="text-decoration-none">
+                                <h5 class="card-title text-warning">DOM 3</h5>
+                            </a>
+                            <p class="card-text">Dit is DOM 3. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="DOM4/index.html"><img src="domlogo.png" class="card-img-top" alt="dom4"></a>
+                        <div class="card-body">
+                            <a href="DOM4/index.html" class="text-decoration-none">
+                                <h5 class="card-title text-warning">DOM 4</h5>
+                            </a>
+                            <p class="card-text">Dit is DOM 4. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="DOMOEF/oef01/index.html"><img src="domlogo.png" class="card-img-top" alt="dom01"></a>
+                        <div class="card-body">
+                            <a href="DOMOEF/oef01/index.html" class="text-decoration-none">
+                                <h5 class="card-title text-warning">DOM 5</h5>
+                            </a>
+                            <p class="card-text">Dit is DOM 5. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="DOMOEF/oef2/index.html"><img src="domlogo.png" class="card-img-top" alt="dom02"></a>
+                        <div class="card-body">
+                            <a href="DOMOEF/oef2/index.html" class="text-decoration-none">
+                                <h5 class="card-title text-warning">DOM 6</h5>
+                            </a>
+                            <p class="card-text">Dit is DOM 6. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="DOMOEF/dragendrop/index.html"><img src="domlogo.png" class="card-img-top" alt="drag"></a>
+                        <div class="card-body">
+                            <a href="DOMOEF/dragendrop/index.html" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Drag en drop</h5>
+                            </a>
+                            <p class="card-text">Dit is DOM 7. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="DOMOEF/listbox/index.html"><img src="domlogo.png" class="card-img-top" alt="listbox"></a>
+                        <div class="card-body">
+                            <a href="DOMOEF/listbox/index.html" class="text-decoration-none">
+                                <h5 class="card-title text-warning">Listbox</h5>
+                            </a>
+                            <p class="card-text">Dit is DOM 8. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--event sectie-->
+        <section class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+            <div class="text-center py-3"><h2>EVENT</h2></div>
+            <div class="row d-flex justify-content-center">
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <a href="EVENT/index.html"><img src="jslogo.png" class="card-img-top" alt="event"></a>
+                        <div class="card-body">
+                            <a href="EVENT/index.html" class="text-decoration-none">
+                                <h5 class="card-title text-warning">EVENT</h5>
+                            </a>
+                            <p class="card-text">Dit is EVENT. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
